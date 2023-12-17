@@ -27,7 +27,7 @@ def get_stock_data(symbol:str, yrs:int):
     df = yf.download(symbol, start=start_date, end=end_date)
     return df
 
-# function that returns posts from Reddit in the form of a data frame, about a particular topic
+# returns posts from Reddit as a data frame, about a particular topic
 def get_reddit_posts(query:str):
     user_agent = "praw_scraper_1.0"
     reddit = praw.Reddit(username = "< REDDIT USER NAME >",
